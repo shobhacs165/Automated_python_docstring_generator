@@ -1,0 +1,9 @@
+[tool.automated_docstrings]
+# Define the preferred docstring style (google, numpy, or rest)
+style = "google"
+
+# Minimum percentage of documented symbols required to pass CI
+min_coverage = 80.0
+
+# Patterns or paths to exclude from documentation checks
+exclude = ["tests/*", "setup.py"]

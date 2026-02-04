@@ -1,0 +1,16 @@
+repos:
+-   repo: local
+    hooks:
+    -   id: check-docstring-coverage
+        name: Check Docstring Coverage
+        entry: python -m automated_docstrings.cli --check-coverage
+        language: python
+        types: [python]
+        description: "Blocks the commit if docstring coverage is below the threshold."
+
+    -   id: validate-docstring-style
+        name: Validate Docstring Style
+        entry: python -m automated_docstrings.cli --validate-style
+        language: python
+        types: [python]
+        description: "Validates that docstrings follow the project's style standards."
